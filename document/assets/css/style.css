@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+	font-family: 'Montserrat';
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	background-color: #f3e1e2;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 10%;
+	text-align: center;
+}
+
+
+.login-container {
+	display: flex;
+	/* align-items: center; */
+	border-radius: 2%;
+	width: 100%;
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+	position: relative;
+	overflow: hidden;
+
+}
+
+p {
+
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 20px 20px;
+	color: #ffffff;
+}
+
+
+.form-container {
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(255, 242, 242);
+	border: 2px black;
+	padding: 123px 50px;
+	width: 50%;
+}
+
+.overlay-container{
+	width: 50%;
+}
+
+.overlay-panel {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	padding: 0 60px;
+	background-color: #ff4555;
+}
+
+h1 {
+	text-align: center;
+	font-weight: bold;
+	margin: 0;
+}
+
+.item1 {
+	color: #ffffff;
+	font-weight: bold;
+	padding: 4px;
+}
+
+.data {
+	display: block;
+	width: 100%;
+	margin: 8px;
+	padding: 12px;
+	border: 0px;
+	background-color: #eee;
+}
+
+.forget a {
+	display: block;
+	color: #333;
+	text-align: center;
+	margin: 30px 5px;
+}
+
+button {
+	display: block;
+	margin: auto;
+	text-align: center;
+	padding: 12px 45px;
+	border-radius: 40px;
+	border: 1px solid #FF4B2B;
+	background-color: #FF4B2B;
+	font-size: 12px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+button:hover {
+	background-color: #FF4B2B;
+	opacity: 0.8;
+}
+
+.social1,
+.social2 {
+	color: rgb(95, 94, 94);
+	font-size: 30px;
+	text-decoration: none;
+	border: 1.5px solid rgb(185, 184, 184);
+	border-radius: 40px;
+	margin: 10px;
+	line-height: 2px;
+	/* justify-content: center;
+	align-items: center; */
+	padding: 5px;
+}
+
+.social-container {
+	display: flex;
+    margin: 30px 0px;
+    justify-content: center;
+}
+
+
+span {
+	font-size: 15px;
+	display: block;
+	text-align: center;
+}
+
+.data {
+	display: block;
+	justify-content: center;
+	width: 90%;
+	margin: 8px;
+	padding: 12px;
+	border: 0px;
+	background-color: #eee;
+}
+
+.form-container {
+	background-color: rgb(255, 242, 242);
+	border: 2px black;
+	height: 540px;
+	padding: 75px 65px;
+	width: 50%;
+}
+
+button:hover {
+	background-color: #FF4B2B;
+	opacity: 0.8;
+}
+

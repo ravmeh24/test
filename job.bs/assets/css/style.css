@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,700&display=swap');
+
+body {
+    /* font-family:  "Montserrat", sans-serif; */
+}
+
+.top-bar {
+    font-size: 12px;
+}
+
+.my-social li {
+    padding-left: 15px;
+}
+
+.my-navbar {
+    font-size: 13px;
+}
+
+.bell-div {
+    position: relative;
+    padding-right: 2px;
+}
+
+.number {
+    position: absolute;
+    top: -9px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    background-color: #da3746;
+    border-radius: 40px;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.bell-icon {
+    font-size: 20px;
+}
+
+.menu-list {
+    list-style-type: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #314047;
+}
+
+.section-title .title {
+    font-size: 30px;
+}
+
+.job-text {
+    color: #766df4 !important;
+}
+
+.text-muted {
+    color: #74788d !important;
+}
+
+.fw-semibold {
+    font-weight: 600;
+}
+
+.search {
+    position: relative;
+    border-right: 1px solid #e2e5e8;
+}
+
+.case {
+    position: absolute;
+    top: 15px;
+    left: 11px;
+    color: #766df4;
+}
+
+.location {
+    position: absolute;
+    bottom: 20px;
+    left: 12px;
+    z-index: 1;
+    color: #766df4;
+}
+
+.holder {
+    padding: 10px 10px 10px 32px;
+    border: none;
+    height: 50px;
+    width:100%;
+}
+
+
+.holder::after {
+    content: '';
+    border-right: 1px solid rgb(0, 0, 0);
+}
+
+.home .submit-btn{
+    background-color: #766df4;
+    border-color: #766df4;
+    border-radius: 0 8px 8px 0px;
+}
+
+.home-img {
+    height: auto;
+    width: 100%;
+}
+
+.list-group {
+    list-style-type: none;
+}
+
+.my-div {
+    padding-top: 110px;
+}
+
+.my-div::before {
+    content: '';
+    background-color: #766df4;
+}
+
+.countries {
+    border: none;
+    background-color: white;
+    height: 50px;
+    width: 100%;
+}
+
+.company::before {
+    content: "fa-solid fa-briefcase"
+}
+
+.my-border {
+    width: 100px;
+    height: 100px;
+    background-color: #f1f0fe;
+}
+
+.full {
+    background-color: #d9ede8;
+    color: #048565;
+}
+
+.private {
+    background-color: #e7f8fe;
+    color: #69d3f3;
+}
+
+.part1 {
+    color: #df4d5b;
+    background-color: #fae1e3;
+}
+
+.urgent {
+    color: #f7cd57;
+    background-color: #fef8e5;
+}
+
+.free1 {
+    color: #8b83f6;
+    background-color: #eae9fe;
+}
+
+.lead-p {
+    color: #74788d;
+}
+
+.span-image {
+    display: inline-flex;
+    width: 60px;
+    height: 60px;
+    background-color: #e3e2f1;
+    border-radius: 9px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.round-number {
+    background-color: #766df4;
+    border-radius: 50px;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    border-radius: 40px;
+}
+
+.my-browser {
+    padding-bottom: 10%;
+}
+
+.happy-div {
+    padding-bottom: 8%;
+}
+
+.font-style {
+    font-family: "Dancing Script", cursive;
+    font-size: 50px;
+}
+
+.candidate-para {
+    margin: 0 25%;
+    font-size: 18px;
+}
+
+.candidate {
+    color: #495057;
+    font-weight: 600;
+}
+
+.freelancer-para {
+    padding-bottom: 40px;
+    margin: 0 25%;
+}
+
+.card-header {
+    border: none;
+}
+
+.card-box {
+    box-shadow: 0 3px 10px 8px #31404714;
+    border-radius: 6px;
+}
+
+.heading {
+    color: #314047;
+    font-size: 17px;
+}
+
+.logo-div {
+    padding: 110px 0 60px 0;
+}
+
+.notify {
+    background-color: #343c3f;
+}
+
+.notify-content {
+    padding: 60px;
+    color: white;
+}
+
+.input-area {
+    padding: 60px;
+    z-index: 1;
+}
+
+.lead-notify {
+    color: #828789;
+    background-color: #343c3f;
+}
+
+.notify-col {
+    background: url(../css/images/bellit.jpeg) no-repeat;
+    background-position: right;
+    background-repeat: no-repeat;
+
+}
+
+.footer-section {
+    background-color: #2e3538;
+}
+
+.footer-section .footer-item li {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.footer-section .footer-item li i {
+    margin-right: 5px;
+}
+
+.footer-social-menu li i {
+    background-color: 2e3538;
+    color: #ffffff;
+    border-color: #fff;
+    border: 1px solid rgba(255, 255, 255, .45);
+    border-radius: 40px;
+    width: 32px;
+    height: 32px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.footer-div {
+    background-color: #2e3538;
+    border-top: 1px solid #343c3f;
+    padding: 20px 0;
+}
+
+.footer-item li {
+    margin-bottom: px;
+}
+
+.read {
+    color: #766df4;
+}
+
+.noti-img {
+    height: 200px;
+    opacity: 0.5
+}
+
+.box-ad {
+    /* border: 1px solid #eff0f2; */
+    border: 1px solid #e8ebf1;
+    border-radius: 6px;
+}
+
+.my-word {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.top-left-tri {
+    border-right: none;
+    border-top: none;
+    border-left: 60px solid #766df4;
+    border-bottom: 60px solid transparent;
+    position: absolute;
+}
+
+.star {
+    position: absolute;
+    left: -52px;
+    top: 10px;
+    color: #ffffff;
+}
+
+.map {
+    color: #766df4;
+}
+
+.browse {
+    padding-top: 120px;
+}
+
+.browser-lead {
+    color: #766df4;
+    font-weight: 600;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: #495057;
+    border: none;
+}
+
+ .nav-tabs .nav-link .active {
+    background-color: #766df4;
+    color: white;
+}
+
+ .nav-tabs .nav-link:hover {
+    background-color: #766df4;
+    color: white;
+    border-radius: 10px;
+}
+
+.random-jobs {
+    padding: 100px 0px;
+}
+
+.web-row {
+    padding-left: 32px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.job-list {
+    box-shadow: 0 3px 10px 0 #dbe2e5;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid #e7dfdf;
+}
+
+.home {
+    background-color: #f1f0fe;
+    padding: 170px 0;
+}
+
+.choices {
+    background-color: white;
+    border-left: #000;
+}
+
+
+.btn {
+    background-color: #766df4;
+    border-color: #766df4;
+    border-radius: 5px;
+}
+

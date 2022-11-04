@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="../admin-panel/assets/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100&family=Roboto:ital,wght@0,100;0,300;1,100;1,300;1,700&display=swap"
+        rel="stylesheet">
+    <title>Admin-panel</title>
+</head>
+
+<body>
+
+    <div class="container-fluid bar">
+        <div class="row">
+            <div class="col-md-2 col-sm-3 col-xs-6">
+                <a href="#" class="atab-menu"><i class="fa fa-bars tab-menu" aria-hidden="true"></i></a>
+                <a href="#" class="logo">
+                    <img src="../admin-panel/assets/images/logo1.png" alt="brand name">
+                </a>
+            </div>
+            <div class="col-md-6 col-sm-3 col-xs-6">
+                <div class="search">
+                    <input type="text" placeholder="Search..." class="form-control">
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-sm-3 col-xs-6">
+                <div class="d-flex icon-div">
+                    <i class="fa-solid fa-comment-dots"></i>
+                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-solid fa-tag"></i>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-6">
+                <!-- Dropdown Trigger -->
+                <div class="main-acc">
+                    <a class="waves-effect dropdown-button top-user-pro" href="#" data-activates="top-menu"><img
+                            src="../admin-panel/assets/images/6.png" alt="account" width="30" height="30">My Account <i
+                            class="fa fa-angle-down" aria-hidden="true"></i>
+                    </a>
+                    <ul id="top-menu" class="dropdown-content top-menu-sty">
+                        <li><a href="#" class="waves-effect"><i class="fa fa-cogs" aria-hidden="true"></i>Admin
+                                Setting</a>
+                        </li>
+                        <li><a href="#" class="waves-effect"><i class="fa fa-list-ul" aria-hidden="true"></i>
+                                Listings</a>
+                        </li>
+                        <li><a href="#" class="waves-effect"><i class="fa fa-building-o" aria-hidden="true"></i>
+                                Hotels</a>
+                        </li>
+                        <li><a href="#" class="waves-effect"><i class="fa fa-umbrella" aria-hidden="true"></i> Tour
+                                Packages</a>
+                        </li>
+                        <li><a href="#" class="waves-effect"><i class="fa fa-flag-checkered" aria-hidden="true"></i>
+                                Events</a>
+                        </li>
+                        <li><a href="#" class="waves-effect"><i class="fa fa-tags" aria-hidden="true"></i> Offers</a>
+                        </li>
+                        <li><a href="#" class="waves-effect"><i class="fa fa-user-plus" aria-hidden="true"></i> Add New
+                                User</a>
+                        </li>
+                        <li><a href="#" class="waves-effect"><i class="fa fa-undo" aria-hidden="true"></i> Backup
+                                Data</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="#" class="ho-dr-con-last waves-effect"><i class="fa fa-sign-in"
+                                    aria-hidden="true"></i> Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- main section starts here -->
+    <div class="page">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2 pl-0 main-section">
+                    <div class="nav-left">
+                        <nav class="navbar navbar-expand-lg bg-dark navbar-left">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="#">
+                                        <i class="fa-solid fa-user mr-3"></i>
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">
+                                        <i class="fa-solid fa-list mr-3"></i>
+                                        Listing
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">
+                                        <i class="fa-solid fa-hotel mr-3"></i>
+                                        Hotels
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">
+                                        <i class="fa-solid fa-hotel mr-3"></i>
+                                        Food
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">
+                                        <i class="fa-solid fa-location-dot mr-3"></i>
+                                        Maps
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">
+                                        <i class="fa-solid fa-book-open-reader mr-3"></i>
+                                        Library
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">
+                                        <i class="fa-solid fa-calendar-days mr-3"></i>
+                                        Events
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">
+                                        <i class="fa-solid fa-photo-film mr-3"></i>
+                                        Social Media
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">
+                                        <i class="fa-solid fa-address-book mr-3"></i>
+                                        Sign up
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-10">
+                    <div class="main-content">
+
+                        <!-- home and dashboard row starts here -->
+                        <div class="row">
+                            <div class="content-header">
+                                <h3 class="content-title mb-0">Dashboard</h3>
+                                <h6 class="mb-0">Welcome Back to Dashboard</h6>
+
+                                <ul class="list pl-0 mt-2 mb-0">
+                                    <li class="list-item">
+                                        <a href="https://www.w3schools.com/" class="text-decoration-none">
+                                            <i class="fa-solid fa-house"></i>
+                                            Home/
+                                        </a>
+                                    </li>
+                                    <li class="list-item ml-1">
+                                        <a href="https://www.w3schools.com/">
+                                            Dashboard
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- home and dashboard ends here -->
+
+
+                        <!-- first row starts here  -->
+                        <div class="row">
+                            <div class="mt-4 first-div ">
+                                <div class="col-lg-3 ">
+                                    <div class="card bg-primary text-white mb-4 h-100">
+                                        <div class="card-body">
+                                            Primary Card
+                                        </div>
+                                        <div class="card-footer d-flex align-items-center justify-content-between">
+                                            <a class="small text-white " href="#">
+                                                View Details
+                                            </a>
+                                            <div class="small text-white">
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 ">
+                                    <div class="card bg-warning text-white mb-4 h-100 ">
+                                        <div class="card-body">
+                                            Warning Card
+                                        </div>
+                                        <div class="card-footer d-flex align-items-center justify-content-between">
+                                            <a class="small text-white" href="#">
+                                                View Details
+                                            </a>
+                                            <div class="small text-white">
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 ">
+                                    <div class="card bg-success text-white mb-4 h-100 ">
+                                        <div class="card-body">
+                                            Success Card
+                                        </div>
+                                        <div class="card-footer d-flex align-items-center justify-content-between">
+                                            <a class="small text-white" href="#">
+                                                View Details
+                                            </a>
+                                            <div class="small text-white">
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 ">
+                                    <div class="card bg-danger text-white mb-4 h-100 ">
+                                        <div class="card-body">
+                                            Danger Card
+                                        </div>
+                                        <div class="card-footer d-flex align-items-center justify-content-between">
+                                            <a class="small text-white" href="#">
+                                                View Details
+                                            </a>
+                                            <div class="small text-white">
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- first row ends here  -->
+
+                        <!-- second row starts here  -->
+                        <div class="row">
+                            <div class="mt-3 d-flex second-div ">
+                                <div class="col-md-6">
+                                    <div class="my-div">
+                                        <div class="inn-title">
+                                            <h4>Country Campaigns</h4>
+                                            <p>A airport hotels the right way to start break holiday</p>
+                                            <a class="dropdown-button drop-down-meta" href="#"
+                                                data-activates="dropdown1"><i class="fa-solid fa-ellipsis-vertical"></i>
+                                            </a>
+                                            <ul id="dropdown1" class="dropdown-content"
+                                                style="width: 30px; position: absolute; top: 15px; left: 554.188px; opacity: 1; display: none;">
+                                                <li><a href="#!">Add New</a>
+                                                </li>
+                                                <li><a href="#!">Edit</a>
+                                                </li>
+                                                <li><a href="#!">Update</a>
+                                                </li>
+                                                <li class="divider"></li>
+                                                <li><a href="#!"><i class="material-icons">delete</i>Delete</a>
+                                                </li>
+                                                <li><a href="#!"><i class="material-icons">subject</i>View All</a>
+                                                </li>
+                                                <li><a href="#!"><i class="material-icons">play_for_work</i>Download</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="table-div">
+                                            <div class="table-box">
+                                                <table class="table table-hover">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Country</th>
+                                                            <th>Client</th>
+                                                            <th>Changes</th>
+                                                            <th>Budget</th>
+                                                            <th>Status</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><span class="txt-dark weight-500">Australia</span>
+                                                            </td>
+                                                            <td>Beavis</td>
+                                                            <td>
+                                                                <span class="txt-success">
+                                                                    <i class="fa fa-angle-up"></i>
+                                                                    <span>2.43%</span>
+                                                                </span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="txt-dark weight-500">$1478</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="label label-success">Active</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="txt-dark weight-500">Cuba</span>
+                                                            </td>
+                                                            <td>Felix</td>
+                                                            <td>
+                                                                <span class="txt-success">
+                                                                    <i class="fa fa-angle-up">
+                                                                    </i>
+                                                                    <span>1.43%</span>
+                                                                </span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="txt-dark weight-500">$951</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="label label-danger">Closed</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="txt-dark weight-500">France</span>
+                                                            </td>
+                                                            <td>Cannibus</td>
+                                                            <td>
+                                                                <span class="txt-danger">
+                                                                    <i class="fa fa-angle-up">
+                                                                    </i><span>-8.43%</span>
+                                                                </span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="txt-dark weight-500">$632</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="label label-default">Hold</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="txt-dark weight-500">Norway</span>
+                                                            </td>
+                                                            <td>Neosoft</td>
+                                                            <td>
+                                                                <span class="txt-success">
+                                                                    <i class="fa fa-angle-up">
+                                                                    </i><span>7.43%</span>
+                                                                </span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="txt-dark weight-500">$325</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="label label-default">Hold</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="txt-dark weight-500">South Africa</span>
+                                                            </td>
+                                                            <td>Hencework</td>
+                                                            <td>
+                                                                <span class="txt-success">
+                                                                    <i class="fa fa-angle-up">
+                                                                    </i><span>9.43%</span>
+                                                                </span>
+                                                            </td>
+                                                            <td>
+                                                                <span>$258</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="label label-success">Active</span>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="my-div">
+                                        <div class="inn-title">
+                                            <h4>Country Campaigns</h4>
+                                            <p>A airport hotels the right way to start break holiday</p>
+                                            <a class="dropdown-button drop-down-meta " href="#"
+                                                data-activates="dropdown1" data-toggle="dropdown"><i
+                                                    class="fa-solid fa-ellipsis-vertical"></i>
+                                                <ul id="dropdown1" class="dropdown-content">
+                                                    <li><a href="#!">Add New</a>
+                                                    </li>
+                                                    <li><a href="#!">Edit</a>
+                                                    </li>
+                                                    <li><a href="#!">Update</a>
+                                                    </li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#!"><i class="material-icons">delete</i>Delete</a>
+                                                    </li>
+                                                    <li><a href="#!"><i class="material-icons">subject</i>View
+                                                            All</a>
+                                                    </li>
+                                                    <li><a href="#!"><i
+                                                                class="material-icons">play_for_work</i>Download</a>
+                                                    </li>
+                                                </ul>
+                                            </a>
+
+                                        </div>
+                                        <div class="table-div">
+                                            <div class="table-box">
+                                                <table class="table table-hover">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Country</th>
+                                                            <th>Client</th>
+                                                            <th>Changes</th>
+                                                            <th>Budget</th>
+                                                            <th>Status</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><span class="txt-dark weight-500">Australia</span>
+                                                            </td>
+                                                            <td>Beavis</td>
+                                                            <td>
+                                                                <span class="txt-success">
+                                                                    <i class="fa fa-angle-up"></i>
+                                                                    <span>2.43%</span>
+                                                                </span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="txt-dark weight-500">$1478</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="label label-success">Active</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="txt-dark weight-500">Cuba</span>
+                                                            </td>
+                                                            <td>Felix</td>
+                                                            <td>
+                                                                <span class="txt-success">
+                                                                    <i class="fa fa-angle-up">
+                                                                    </i>
+                                                                    <span>1.43%</span>
+                                                                </span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="txt-dark weight-500">$951</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="label label-danger">Closed</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="txt-dark weight-500">France</span>
+                                                            </td>
+                                                            <td>Cannibus</td>
+                                                            <td>
+                                                                <span class="txt-danger">
+                                                                    <i class="fa fa-angle-up">
+                                                                    </i><span>-8.43%</span>
+                                                                </span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="txt-dark weight-500">$632</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="label label-default">Hold</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="txt-dark weight-500">Norway</span>
+                                                            </td>
+                                                            <td>Neosoft</td>
+                                                            <td>
+                                                                <span class="txt-success">
+                                                                    <i class="fa fa-angle-up">
+                                                                    </i><span>7.43%</span>
+                                                                </span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="txt-dark weight-500">$325</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="label label-default">Hold</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="txt-dark weight-500">South Africa</span>
+                                                            </td>
+                                                            <td>Hencework</td>
+                                                            <td>
+                                                                <span class="txt-success">
+                                                                    <i class="fa fa-angle-up">
+                                                                    </i><span>9.43%</span>
+                                                                </span>
+                                                            </td>
+                                                            <td>
+                                                                <span>$258</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="label label-success">Active</span>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- second row ends here  -->
+
+                        <!-- third row starts here  -->
+                        <div class="row pt-3">
+                            <div class="col-md-12 ">
+                                <div class="inner-box">
+                                    <div class="inn-title">
+                                        <h4>User Details</h4>
+                                        <p>Airtport Hotels The Right Way To Start A Short Break Holiday</p>
+                                        <a class="dropdown-button drop-down-meta" href="#" data-activates="dr-users">
+                                            <i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                        <ul id="dr-users" class="dropdown-content">
+                                            <li><a href="#!">Add New</a>
+                                            </li>
+                                            <li><a href="#!">Edit</a>
+                                            </li>
+                                            <li><a href="#!">Update</a>
+                                            </li>
+                                            <li class="divider"></li>
+                                            <li><a href="#!"><i class="material-icons">delete</i>Delete</a>
+                                            </li>
+                                            <li><a href="#!"><i class="material-icons">subject</i>View All</a>
+                                            </li>
+                                            <li><a href="#!"><i class="material-icons">play_for_work</i>Download</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+                                    <div class="table-div">
+                                        <div class="table-box">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>User</th>
+                                                        <th>Name</th>
+                                                        <th>Phone</th>
+                                                        <th>Email</th>
+                                                        <th>Country</th>
+                                                        <th>Listings</th>
+                                                        <th>Enquiry</th>
+                                                        <th>Bookings</th>
+                                                        <th>Reviews</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><span class="list-img"><img
+                                                                    src="../admin-panel/assets/images/6.png"
+                                                                    alt="account" height="30" width="30"></span>
+                                                        </td>
+                                                        <td><a href="#"><span class="list-enq-name">Marsha
+                                                                    Hogan</span><span class="list-enq-city">Illunois,
+                                                                    United
+                                                                    States</span></a>
+                                                        </td>
+                                                        <td>+01 3214 6522</td>
+                                                        <td>chadengle@dummy.com</td>
+                                                        <td>Australia</td>
+                                                        <td>
+                                                            <span class="label label-primary">02</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="label label-danger">12</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="label label-success">24</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="label label-info">36</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="list-img"><img
+                                                                    src="../admin-panel/assets/images/6.png"
+                                                                    alt="account" width="30" height="30"></span>
+                                                        </td>
+                                                        <td><a href="#"><span class="list-enq-name">Marsha
+                                                                    Hogan</span><span class="list-enq-city">Illunois,
+                                                                    United
+                                                                    States</span></a>
+                                                        </td>
+                                                        <td>+01 3214 6522</td>
+                                                        <td>chadengle@dummy.com</td>
+                                                        <td>Australia</td>
+                                                        <td>
+                                                            <span class="label label-primary">02</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="label label-danger">12</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="label label-success">24</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="label label-info">36</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="list-img"><img
+                                                                    src="../admin-panel/assets/images/6.png"
+                                                                    alt="account" width="30" height="30">
+                                                            </span>
+                                                        </td>
+                                                        <td><a href="#"><span class="list-enq-name">Marsha
+                                                                    Hogan</span><span class="list-enq-city">Illunois,
+                                                                    United
+                                                                    States</span></a>
+                                                        </td>
+                                                        <td>+01 3214 6522</td>
+                                                        <td>chadengle@dummy.com</td>
+                                                        <td>Australia</td>
+                                                        <td>
+                                                            <span class="label label-primary">02</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="label label-danger">12</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="label label-success">24</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="label label-info">36</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span class="list-img">
+                                                                <img src="../admin-panel/assets/images/6.png"
+                                                                    alt="account" width="30" height="30">
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#">
+                                                                <span class="list-enq-name">Marsha
+                                                                    Hogan
+                                                                </span>
+                                                                <span class="list-enq-city">Illunois, United
+                                                                    States</span>
+                                                            </a>
+                                                        </td>
+                                                        <td>+01 3214 6522</td>
+                                                        <td>chadengle@dummy.com</td>
+                                                        <td>Australia</td>
+                                                        <td>
+                                                            <span class="label label-primary">02</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="label label-danger">12</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="label label-success">24</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="label label-info">36</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="list-img"><img
+                                                                    src="../admin-panel/assets/images/6.png"
+                                                                    alt="account" width="30" height="30"></span>
+                                                        </td>
+                                                        <td><a href="#"><span class="list-enq-name">Marsha
+                                                                    Hogan</span><span class="list-enq-city">Illunois,
+                                                                    United
+                                                                    States</span></a>
+                                                        </td>
+                                                        <td>+01 3214 6522</td>
+                                                        <td>chadengle@dummy.com</td>
+                                                        <td>Australia</td>
+                                                        <td>
+                                                            <span class="label label-primary">02</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="label label-danger">12</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="label label-success">24</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="label label-info">36</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- third row ends here  -->
+
+                    <!-- fourth row starts here  -->
+                    <div class="row mt-3">
+                            <div class="col-md-6">
+                                <div class="my-div">
+                                    <div class="inn-title">
+                                        <h4>Listing Enquiry</h4>
+                                        <p>Airtport Hotels The Right Way To Start A Short Break Holiday</p>
+                                        <a class="dropdown-button drop-down-meta" href="#"
+                                            data-activates="dr-listings"><i class="fa-solid fa-ellipsis-vertical"></i>
+                                        </a>
+                                        <ul id="dr-listings" class="dropdown-content">
+                                            <li><a href="#!">Add New</a>
+                                            </li>
+                                            <li><a href="#!">Edit</a>
+                                            </li>
+                                            <li><a href="#!">Update</a>
+                                            </li>
+                                            <li class="divider"></li>
+                                            <li><a href="#!"><i class="material-icons">delete</i>Delete</a>
+                                            </li>
+                                            <li><a href="#!"><i class="material-icons">subject</i>View All</a>
+                                            </li>
+                                            <li><a href="#!"><i class="material-icons">play_for_work</i>Download</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="table-div">
+                                        <div class="table-box">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Select</th>
+                                                        <th>Listing</th>
+                                                        <th>Name</th>
+                                                        <th>Date</th>
+                                                        <th>City</th>
+                                                        <th>Enquiry</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="checkbox" class="filled-in"
+                                                                id="filled-in-box-1" checked="checked">
+                                                            <label for="filled-in-box-1"></label>
+                                                        </td>
+                                                        <td><span class="list-img"><img
+                                                                    src="../admin-panel/assets/images/6.png"
+                                                                    alt="account" width="30" height="30"></span>
+                                                        </td>
+                                                        <td><span class="list-enq-name">Taaj Club
+                                                                House</span><span class="list-enq-city">Illunois,
+                                                                United
+                                                                States</span>
+                                                        </td>
+                                                        <td>12 may</td>
+                                                        <td>Hawaii</td>
+                                                        <td>
+                                                            <span class="label label-success">15</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="checkbox" class="filled-in"
+                                                                id="filled-in-box-2" checked="checked">
+                                                            <label for="filled-in-box-2"></label>
+                                                        </td>
+                                                        <td><span class="list-img"><img
+                                                                    src="../admin-panel/assets/images/6.png"
+                                                                    alt="account" width="30" height="30"></span>
+                                                        </td>
+                                                        <td><span class="list-enq-name">Grand Hotel</span><span
+                                                                class="list-enq-city">Rio,Brazil</span>
+                                                        </td>
+                                                        <td>07 aug</td>
+                                                        <td>Hawaii</td>
+                                                        <td>
+                                                            <span class="label label-success">05</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="checkbox" class="filled-in"
+                                                                id="filled-in-box-3" checked="checked">
+                                                            <label for="filled-in-box-3"></label>
+                                                        </td>
+                                                        <td><span class="list-img"><img
+                                                                    src="../admin-panel/assets/images/6.png"
+                                                                    alt="account" width="30" height="30"></span>
+                                                        </td>
+                                                        <td><span class="list-enq-name">Grand Pales</span><span
+                                                                class="list-enq-city">Chennai,India</span>
+                                                        </td>
+                                                        <td>18 jun</td>
+                                                        <td>Hawaii</td>
+                                                        <td>
+                                                            <span class="label label-success">35</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="checkbox" class="filled-in"
+                                                                id="filled-in-box-4">
+                                                            <label for="filled-in-box-4"></label>
+                                                        </td>
+                                                        <td><span class="list-img"><img
+                                                                    src="../admin-panel/assets/images/6.png"
+                                                                    alt="account" width="30" height="30"></span>
+                                                        </td>
+                                                        <td><span class="list-enq-name">Lake Palace
+                                                                Hotel</span><span
+                                                                class="list-enq-city">Beijing,China</span>
+                                                        </td>
+                                                        <td>09 apr</td>
+                                                        <td>Hawaii</td>
+                                                        <td>
+                                                            <span class="label label-success">24</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="checkbox" class="filled-in"
+                                                                id="filled-in-box-5">
+                                                            <label for="filled-in-box-5"></label>
+                                                        </td>
+                                                        <td><span class="list-img"><img
+                                                                    src="../admin-panel/assets/images/6.png"
+                                                                    alt="account" width="30" height="30"></span>
+                                                        </td>
+                                                        <td><span class="list-enq-name">First Class
+                                                                Hotel</span><span
+                                                                class="list-enq-city">Berlin,Germany</span>
+                                                        </td>
+                                                        <td>21 jun</td>
+                                                        <td>Hawaii</td>
+                                                        <td>
+                                                            <span class="label label-success">18</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--== Hotel Bookings ==-->
+                            <div class="col-md-6">
+                                <div class="my-div">
+                                    <div class="inn-title">
+                                        <h4>Hotel Bookings</h4>
+                                        <p>Airtport Hotels The Right Way To Start A Short Break Holiday</p>
+                                        <a class="dropdown-button drop-down-meta" href="#" data-activates="dr-hotel">
+                                            <i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                        <ul id="dr-hotel" class="dropdown-content">
+                                            <li><a href="#!">Add New</a>
+                                            </li>
+                                            <li><a href="#!">Edit</a>
+                                            </li>
+                                            <li><a href="#!">Update</a>
+                                            </li>
+                                            <li class="divider"></li>
+                                            <li><a href="#!"><i class="material-icons">delete</i>Delete</a>
+                                            </li>
+                                            <li><a href="#!"><i class="material-icons">subject</i>View All</a>
+                                            </li>
+                                            <li><a href="#!"><i class="material-icons">play_for_work</i>Download</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="table-div">
+                                        <div class="table-box">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Select</th>
+                                                        <th>Listing</th>
+                                                        <th>Name</th>
+                                                        <th>Date</th>
+                                                        <th>City</th>
+                                                        <th>Enquiry</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="checkbox" id="ch2-1">
+                                                            <label for="ch2-1"></label>
+                                                        </td>
+                                                        <td><span class="list-img"><img
+                                                                    src="../admin-panel/assets/images/6.png"
+                                                                    alt="account" width="30" height="30"></span>
+                                                        </td>
+                                                        <td><span class="list-enq-name">Taaj Club
+                                                                House</span><span class="list-enq-city">Illunois,
+                                                                United
+                                                                States</span>
+                                                        </td>
+                                                        <td>12 may</td>
+                                                        <td>Hawaii</td>
+                                                        <td>
+                                                            <span class="label label-success">15</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="checkbox" id="ch2-2">
+                                                            <label for="ch2-2"></label>
+                                                        </td>
+                                                        <td><span class="list-img"><img
+                                                                    src="../admin-panel/assets/images/6.png"
+                                                                    alt="account" width="30" height="30"></span>
+                                                        </td>
+                                                        <td><span class="list-enq-name">Grand Hotel</span><span
+                                                                class="list-enq-city">Rio,Brazil</span>
+                                                        </td>
+                                                        <td>07 aug</td>
+                                                        <td>Hawaii</td>
+                                                        <td>
+                                                            <span class="label label-success">05</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="checkbox" id="ch2-3">
+                                                            <label for="ch2-3"></label>
+                                                        </td>
+                                                        <td><span class="list-img"><img
+                                                                    src="../admin-panel/assets/images/6.png"
+                                                                    alt="account" width="30" height="30"></span>
+                                                        </td>
+                                                        <td><span class="list-enq-name">Grand Pales</span><span
+                                                                class="list-enq-city">Chennai,India</span>
+                                                        </td>
+                                                        <td>18 jun</td>
+                                                        <td>Hawaii</td>
+                                                        <td>
+                                                            <span class="label label-success">35</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="checkbox" id="ch2-4">
+                                                            <label for="ch2-4"></label>
+                                                        </td>
+                                                        <td><span class="list-img"><img
+                                                                    src="../admin-panel/assets/images/6.png"
+                                                                    alt="account" width="30" height="30" alt=""></span>
+                                                        </td>
+                                                        <td><span class="list-enq-name">Lake Palace
+                                                                Hotel</span><span
+                                                                class="list-enq-city">Beijing,China</span>
+                                                        </td>
+                                                        <td>09 apr</td>
+                                                        <td>Hawaii</td>
+                                                        <td>
+                                                            <span class="label label-success">24</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="checkbox" id="ch2-5">
+                                                            <label for="ch2-5"></label>
+                                                        </td>
+                                                        <td><span class="list-img"><img
+                                                                    src="../admin-panel/assets/images/6.png"
+                                                                    alt="account" width="30" height="30"></span>
+                                                        </td>
+                                                        <td><span class="list-enq-name">First Class
+                                                                Hotel</span><span
+                                                                class="list-enq-city">Berlin,Germany</span>
+                                                        </td>
+                                                        <td>21 jun</td>
+                                                        <td>Hawaii</td>
+                                                        <td>
+                                                            <span class="label label-success">18</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- fourth row ends here  -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

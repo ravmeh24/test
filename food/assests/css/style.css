@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* .nav-menu {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: transparent;
+    margin-left: 59%;
+} */
+
+.container-nav{
+    max-width: 1140px;
+    margin: 0 auto;
+    background: url("../images/background-burgers-home-top.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: center;
+}
+
+
+a,
+h1,
+h5,
+h2 {
+    text-transform: uppercase;
+}
+
+
+header {
+    /* position: fixed; */
+}
+
+
+.nav-menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.nav-menu ul li {
+    list-style: none;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    padding: 20px;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.nav-menu ul li a:hover {
+    color: rgb(255, 0, 0);
+}
+
+
+.main-food {
+    max-width: 1140px;
+    margin: auto;
+    /* display:flex; */
+    /* background: url("../images/background-burgers-home-top.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh; */
+}
+.main-food-item{
+    position: absolute;
+    top: 35%;
+    left: 18%;
+}
+
+h5 {
+    display: block;
+    padding: 4px 8px;
+    margin: 0;
+    font-size: 12px;
+    background-color: hsla(0, 100%, 50%, 1);
+    max-width: fit-content;
+    color: #ffffff;
+}
+
+h2 {
+    /* display: block; */
+    font-size: 60px;
+    color: #ffffff;
+    line-height: 55px;
+    padding: 12px 0px;
+}
+
+button {
+    background-color: hsla(0, 100%, 50%, 1);
+    padding: 12px 18px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+}
+
+
+button:hover {
+    color: red;
+    background-color: black;
+    border-color: red;
+}
+
+.section-food {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.grid-items {
+    background-color: hsla(0, 100%, 50%, 1);
+}
+
+.grid-items-display {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.item {
+    padding: 25px;
+}
+
+h4 {
+    padding: 12px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+h4,
+p {
+    color: #ffffff;
+}
+
+p {
+    font-size: 10px;
+    line-height: 20px;
+}
+
+.item:hover {
+    background-color: white;
+    box-shadow: 0px 4px 12px 0px rgb(255 245 245 / 60%);
+    }
+
+    .item {
+        transition: .1s all ease-in;
+    }
+    
+
+    .item:hover h4,
+    .item:hover p {
+        color: red;
+    }
+    .socials{
+        display:flex ;
+        flex-direction:row;
+        padding:38px 20px 42px 160px;
+    }
+
+    .social1,
+    .social2,
+    .social3,
+    .social4{
+        color: #ffffff;
+        justify-content: space-around;
+    padding: 10px;
+    }
+    
+    .social1:hover,
+    .social2:hover,
+    .social3:hover,
+    .social4:hover{
+        color:red;
+    }
+

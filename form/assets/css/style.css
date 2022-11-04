@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    background-color: green;
+    height: 600px;
+    width: 500px;
+    margin: auto;
+    padding: 45px;
+}
+
+body {
+    font-family: myfont;
+}
+
+
+
+
+
+.form-container {
+
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    height: 200px;
+    max-width: 360px;
+    padding: 80px 50px;
+    margin: 80px 80px;
+    
+
+}
+
+p {
+    padding: 5px;
+    text-align: center;
+    margin: 10px 0 0;
+    color: #706969;
+    font-size: 12px;
+}
+
+
+
+
+
+.data {
+    margin: 0px 0px 15px;
+    padding: 10px;
+}
+
+#btn {
+    margin: 10px;
+    text-transform: uppercase;
+    outline: 0;
+    background-color: #328f8a;
+    width: 50%;
+    border: 0;
+    padding: 15px;
+    color: white;
+    font-size: 14px;
+}
+
+@font-face {
+    font-family: myfont;
+    src: url(../font/Roboto-Medium.woff);
+}

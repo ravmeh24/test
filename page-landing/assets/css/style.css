@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;1,100;1,300;1,700&display=swap');
+
+body {
+    font-family: open Sans;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.nav-item {
+    padding: 0 20px;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.navbar-brand {
+    margin-left: 65px;
+}
+
+.nav-item:hover {
+    color: black;
+}
+
+/* .account-log{
+    margin-left: 5%;
+} */
+.account-log .nav-link {
+    color: black;
+}
+
+.account-log .nav-item :hover {
+    background-color: black;
+    border-radius: 12px;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.navbar-collapse {
+    /* margin: 0 110px; */
+    margin-left: 15%;
+    max-width: 43%;
+}
+
+.content {
+    margin: 69px 40px;
+    position: relative;
+}
+
+.sub-title {
+    font-size: 55px;
+    line-height: 1;
+    font-weight: 900;
+}
+
+.clock {
+    position: absolute;
+    right: 6rem;
+    top: 11rem;
+}
+
+.btn {
+    border-radius: 12px;
+    padding: 15px 45px;
+    font-weight: 900;
+}
+
+.content h6 {
+    font-weight: 600;
+}
+
+p {
+    font-weight: 900;
+}
+
+.second-div {
+    padding: 120px 0;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.card {
+    border: none;
+}
+
+.card-footer {
+    border-top: none;
+}
+
+.card-text h4 {
+    font-weight: 800;
+    border-top: none;
+}
+
+.p-text {
+    color: #b3bdbe;
+    font-weight: 600;
+}
+
+.new-btn {
+    border-radius: 12px;
+    background-color: white;
+    position: absolute;
+    bottom: 62%;
+    left: -13%;
+    padding: 15px 30px;
+    border: none;
+}
+
+.new-btn a {
+    color: #4f5050;
+    font-weight: 600;
+}
+
+.third-div {
+    padding-top: 120px;
+}
+
+.third-div img {
+    max-height: 80%;
+}
+
+.btns {
+    border-radius: 12px;
+    border-width: 1px;
+    background: none;
+}
+
+.btns a {
+    color: black;
+    font-weight: 600;
+}
+
+.btn-div {
+    width: 35%;
+}
+
+.content-col {
+    padding-top: 125px;
+}
+
+.btn-light {
+    border-radius: 12px;
+    border: 1px solid;
+    padding: 15px 45px;
+    font-weight: 900;
+}
+
+.btn-light a {
+    color: black;
+}
+
+.btn-text {
+    justify-content: space-evenly;
+}
+
+.fourth-div img {
+    max-height: 80%;
+}
+
+.footer-social a {
+    border: 1px solid rgba(167, 167, 167, 0.45);
+    border-radius: 5px;
+    color: black;
+    background-color: #e4e3e6;
+    line-height: 30px;
+    text-align: center;
+    padding: 5px;
+    margin-right: 20px;
+}
+
+.footer-social {
+    margin-bottom: 20%;
+}
+
+.footer-row {
+    margin: 100px 50px 30px;
+    padding: 70px 30px 20px;
+    background-image: linear-gradient(to right, rgb(250, 248, 252), rgb(235, 235, 235, 0.57));
+}
+
+.footer-row ul {
+    margin-bottom: 30%;
+}
+
+.link-column ul li {
+    margin-bottom: 5px;
+}
+
+.footer-social a:hover {
+    color: #D6B981;
+}
+
+.footer-col li {
+    list-style-type: none;
+}
+
+.last-row {
+    display: flex;
+}
+
+.input-div {
+    width: 50%;
+    margin-left: 20%;
+}
+
+@media screen and (max-width:1312px) {
+    .navbar-collapse {
+        /* margin: 0 110px; */
+        margin-left: 0;
+        max-width: 43%;
+    }
+
+    .account-log {
+        margin-left: 10%;
+}
+
+}
